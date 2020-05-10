@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#424242</color>
+    <color name="lightGrey">#DDDDDD</color>
+    <color name="white">#FFFFFF</color>
+    <color name="pinColor">#424242</color>
+    <color name="google_blue">#00adbc</color>
+    <color name="google_red">#fe4f09</color>
+    <color name="google_yellow">#f0660b</color>
+    <color name="google_green">#0aac73</color>
+    <color name="google_black">#200000</color>
+    <color name="google_blue_light">#67c9c4</color>
+    <color name="google_red_light">#fe8991</color>
+    <color name="google_yellow_light">#f19f55</color>
+    <color name="google_green_light">#52bd75</color>
+    <color name="google_black_light">#574546</color>
+    <color name="dialog_level">#99000000</color>
+    <color name="black">#000000</color>
+</resources>

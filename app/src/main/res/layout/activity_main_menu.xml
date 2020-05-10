@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainmenu.MainMenu"
+    android:id="@+id/main_menu"
+    android:background="@drawable/bg_mainmenu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="true">
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/judul"
+            android:textStyle="bold"
+            android:textSize="50sp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/roundedbutton"
+            />
+
+        <TableLayout
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/startb1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundedbutton"
+                android:onClick="intent1"
+                android:text="@string/MUb1"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/scoreb2"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundedbutton"
+                android:onClick="intent2"
+                android:text="@string/MUb2"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/howtob3"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundedbutton"
+                android:onClick="intent3"
+                android:text="@string/MUb3"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/aboutb4"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundedbutton"
+                android:onClick="intent4"
+                android:text="@string/MUb4"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/exitb5"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundedbutton"
+                android:onClick="intent5"
+                android:text="@string/MUb5"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </TableLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/layoutpilihlevel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dialog_level"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:padding="30dp"
+            android:background="@drawable/roundedbutton">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pilih_level"
+                android:textSize="40sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_marginBottom="30dp" />
+
+            <NumberPicker
+                android:id="@+id/numberpicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/numberpicker"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp">
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/bmulai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:text="@string/mulai"
+                    android:onClick="Mulai"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/roundedbutton"/>
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tutuplayoutlevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:text="@string/kembali"
+                    android:onClick="tutuplevel"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/roundedbutton"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
